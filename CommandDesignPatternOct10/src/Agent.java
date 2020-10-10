@@ -2,8 +2,7 @@ import java.util.ArrayList;
 
 /**
  * Agent class has the ability to maintain a list of commands and to execute
- * each one
- * 
+ * each one 
  * @author nylesgeiger
  *
  */
@@ -20,7 +19,6 @@ public class Agent {
 
 	/**
 	 * Adds given command to the list
-	 * 
 	 * @param command a command
 	 */
 	public void placeOrder(Command command) {
