@@ -10,11 +10,11 @@ public class SellStockCommand implements Command {
     private int shares;
 
     /**
-	 * Constructor initializes all values using the data given.
-	 * @param stockTrade The stock trader to use
-	 * @param sockName The name of the stock to sell
-	 * @param shares Number of shares to sell
-	 */
+     * Constructor initializes all values using the data given.
+     * @param stockTrade The stock trader to use
+     * @param sockName The name of the stock to sell
+     * @param shares Number of shares to sell
+     */
     public SellStockCommand(StockTrade stockTrade, String stockName, int shares) {
     this.stockTrade = stockTrade;
     this.stockName = stockName;
@@ -22,8 +22,8 @@ public class SellStockCommand implements Command {
     }
 
     /**
-	 * Sells the given amount of shares of the given stock using the stock trader.
-	 */
+     * Sells the given amount of shares of the given stock using the stock trader.
+     */
     public void execute() {
         stockTrade.sell(stockName, shares);
     }
